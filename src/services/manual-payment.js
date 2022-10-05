@@ -1,7 +1,7 @@
 import { PaymentService } from "medusa-interfaces"
 
-class ManualPaymentService extends PaymentService {
-  static identifier = "manual"
+class IyzicoPaymentService extends PaymentService {
+  static identifier = "iyzico"
 
   constructor() {
     super()
@@ -102,4 +102,4 @@ class ManualPaymentService extends PaymentService {
   }
 }
 
-export default ManualPaymentService
+export default IyzicoPaymentService
