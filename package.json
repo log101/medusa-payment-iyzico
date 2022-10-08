@@ -31,8 +31,10 @@
     "watch": "babel -w src --out-dir .",
     "test": "jest --passWithNoTests"
   },
-  "peerDependencies": {
-    "medusa-interfaces": "1.x"
+  "dependencies": {
+    "medusa-interfaces": "1.x",
+    "typeorm": "^0.2.36",
+    "medusa-core-utils": "^1.1.31"
   },
   "gitHead": "81a7ff73d012fda722f6e9ef0bd9ba0232d37808",
   "keywords": [

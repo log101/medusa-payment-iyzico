@@ -23,6 +23,7 @@ class IyzicoPaymentService extends PaymentService {
    * @returns {object} an object with staus
    */
   async createPayment() {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return { status: "pending" }
   }
 
@@ -32,6 +33,7 @@ class IyzicoPaymentService extends PaymentService {
    * @returns {Promise<object>} returns data
    */
   async retrievePayment(data) {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return data
   }
 
@@ -40,6 +42,7 @@ class IyzicoPaymentService extends PaymentService {
    * @returns {Promise<{ status: string, data: object }>} result with data and status
    */
   async authorizePayment() {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return { status: "authorized", data: { status: "authorized" } }
   }
 
@@ -49,6 +52,7 @@ class IyzicoPaymentService extends PaymentService {
    * @returns {object} same data
    */
   async updatePayment(sessionData) {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return sessionData.data
   }
 
@@ -59,10 +63,12 @@ class IyzicoPaymentService extends PaymentService {
    * @returns {object} existing data merged with update data
    */
   async updatePaymentData(sessionData, update) {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return { ...sessionData.data, ...update.data }
   }
 
   async deletePayment() {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return
   }
 
@@ -72,6 +78,8 @@ class IyzicoPaymentService extends PaymentService {
    * @returns {object} object with updated status
    */
   async capturePayment() {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return { status: "captured" }
   }
 
@@ -81,6 +89,7 @@ class IyzicoPaymentService extends PaymentService {
    * @returns {object} the current data
    */
   async getPaymentData(session) {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return session.data
   }
 
@@ -90,6 +99,7 @@ class IyzicoPaymentService extends PaymentService {
    * @returns {string} same data
    */
   async refundPayment(payment) {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return payment.data
   }
 
@@ -98,6 +108,7 @@ class IyzicoPaymentService extends PaymentService {
    * @returns {object} object with canceled status
    */
   async cancelPayment() {
+    console.log("\n\n\n\n\nAUTHORIZING THE PAYMENT\n\n\n\n\n")
     return { status: "canceled" }
   }
 }
